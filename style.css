@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(35, 35, 48);
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 750px;
+}
+
+#between__div {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#btn__1 {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#square {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-color: white;
+  text-align: center;
+}
+
+#questionMark {
+  position: relative;
+  color: rgb(35, 35, 48);
+  font-weight: 900;
+  font-size: 40px;
+  top: 30%;
+  justify-content: center;
+  display: flex;
+}
+
+#column {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+#column div {
+  margin-bottom: 20px;
+}
+
+#column p {
+  margin: 0;
+}
+
+#inputBox {
+  width: 100%;
+  margin: 0 auto;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(35, 35, 48);
+  color: white;
+  border: 3px solid white;
+  padding: 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: white;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  border: none;
+  font-weight: 700;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#btn__2 {
+  display: flex;
+  justify-content: center;
+}
+
+#massage {
+  font-size:1.4rem;
+}
+
+
+
+@media (min-width: 480px) {
+  section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 750px;
+  }
+
+  #between__div {
+    display: flow-root;
+    float: right;
+  }
+
+  #btn__1 {
+    display: flex;
+    justify-content: left;
+  }
+
+  #row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #column {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #column div {
+    margin-bottom: 20px;
+  }
+
+  #column p {
+    margin: 0;
+  }
+
+  #inputBox {
+    width: 100%;
+    margin: 0 auto;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 35, 48);
+    color: white;
+    border: 3px solid white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  button {
+    background-color: white;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    border: none;
+    font-weight: 700;
+  }
+
+  button:hover,
+  button:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  #btn__2 {
+    width: 77%;
+    margin: 0 auto;
+  }
+}
