@@ -35,14 +35,24 @@ point = parseInt(document.getElementById('score__point').innerHTML);
       max = parseInt(document.getElementById('max__point').innerHTML);
       max = Math.max(...record);
       document.getElementById('max__point').innerHTML = max;
-    } else if (input > random) {
-      document.getElementById("message").innerHTML= "Too High 🔺";
-      point = parseInt(document.getElementById('score__point').innerHTML);
-      point--;
-      document.getElementById('score__point').innerHTML = point;
-    } else {
-      document.getElementById("message").innerHTML= "Too Low 🔻";
-      point = parseInt(document.getElementById('score__point').innerHTML);
+    }
+
+
+    // } else if (input > random) {
+    //   document.getElementById("message").innerHTML= "Too High 🔺";
+    //   point = parseInt(document.getElementById('score__point').innerHTML);
+    //   point--;
+    //   document.getElementById('score__point').innerHTML = point;
+    // } else {
+    //   document.getElementById("message").innerHTML= "Too Low 🔻";
+    //   point = parseInt(document.getElementById('score__point').innerHTML);
+    //   point--;
+    //   document.getElementById('score__point').innerHTML = point;
+    // }
+
+    // Don't repeat yourself - refactoring the code above
+    else if (input !== random) {
+      document.getElementById("message").innerHTML = input > random ? "Too High 🔺" : "Too Low 🔻";
       point--;
       document.getElementById('score__point').innerHTML = point;
     }
